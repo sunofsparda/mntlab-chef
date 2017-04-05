@@ -1,1 +1,3 @@
-yum install -y git vim
+#!/bin/bash
+
+yum install -y git
