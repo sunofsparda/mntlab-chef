@@ -1,6 +1,6 @@
 .vagrant
 /cookbooks
-
+soft/
 # Bundler
 bin/*
 .bundle/*
