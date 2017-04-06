@@ -20,3 +20,7 @@ Task results
 Create first chef recipes; apply them to VM running different OS
 Get familiar with cookbook elements and chef DSL.
 Get familiar with basic development workflow.
+
+
+https://github.com/agileorbit-cookbooks/java
+https://supermarket.chef.io/cookbooks/java
