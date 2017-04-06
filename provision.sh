@@ -10,9 +10,9 @@ rm /root/chef_cookbooks/* -rf
 # echo 'Preparing environment'
 # yum install -y git
 
-# echo '============= INIT_CHEF ============='
-# echo 'Installing Chef and ChefDK'
-# yum localinstall -y /vagrant/soft/chef*el6*.rpm
+echo '============= INIT_CHEF ============='
+echo 'Installing Chef and ChefDK'
+yum localinstall -y /vagrant/soft/chef*el6*.rpm
 
 echo 'Init Chef home'
 mkdir -p /root/chef_cookbooks
