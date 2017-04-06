@@ -4,6 +4,7 @@
 +2. Clone/init this repo o your local PC.  3 - 8 steps should be done in this cookbook. Create a new branch in this repo. All work should be done in this branch. Do not forget to commit and push your changes.
 +3. Download jdk cookbook from Opscode community cookbooks site
 +4. Create jboss cookbook and recipes using Opscode recipe DSL and resources http://docs.opscode.com/resource.html
+chef cookbook generate jboss7
 5. Jboss cookbook should install jboss package and setup jboss server, also it should contain recipes to start/stop/restart/reload jboss service.
 6. Add jdk cookbook dependency to jboss cookbook
 7. Add recipes to install and configure jboss  
