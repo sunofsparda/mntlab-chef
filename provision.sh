@@ -2,9 +2,9 @@
 
 echo '========== CLEAN_ENV =========='
 echo 'Cleaning'
-rm /root/.chef/* -rf
-rm /root/cookbooks/* -rf
-rm /root/chef_cookbooks/* -rf
+# rm /root/.chef/* -rf
+# rm /root/cookbooks/* -rf
+# rm /root/chef_cookbooks/* -rf
 
 # echo '=============== INIT ==============='
 # echo 'Preparing environment'
