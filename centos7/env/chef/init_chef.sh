@@ -10,6 +10,6 @@ cookbook_path "/root/cookbooks"
 json_attribs "/root/.chef/runlist.json"
 EOF
 
-touch ~/.chef/runlist.json
+cp /vagrant/env/chef/runlist.json ~/.chef/runlist.json
 
 echo 'exit 0'
