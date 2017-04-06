@@ -2,9 +2,9 @@
 
 echo '========== CLEAN_ENV =========='
 echo 'Cleaning'
-# rm /root/.chef/* -rf
-# rm /root/cookbooks/* -rf
-# rm /root/chef_cookbooks/* -rf
+rm /root/.chef/* -rf
+rm /root/cookbooks/* -rf
+rm /root/chef_cookbooks/* -rf
 
 # echo '=============== INIT ==============='
 # echo 'Preparing environment'
@@ -16,8 +16,6 @@ echo 'Cleaning'
 
 echo 'Init Chef home'
 mkdir -p /root/chef_cookbooks
-cp -r /vagrant/.chef /root/
-cp -r /vagrant/cookbooks /root/
 
 # echo '=========== GET_COOKBOOKS ==========='
 # echo 'Downloading cookbooks'
@@ -64,6 +62,10 @@ cp -r /vagrant/cookbooks /root/
 # berks package
 # tar -xf cookbooks-*.tar.gz -C /root/
 # rm cookbooks-*tar.gz
+
+echo '=========== GET_EXISTING_COOKBOOKS ==========='
+cp -r /vagrant/.chef /root/
+cp -r /vagrant/cookbooks /root/
 
 
 echo 'exit 0'

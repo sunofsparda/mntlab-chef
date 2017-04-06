@@ -26,7 +26,6 @@ end
 # #   action :create
 # # end
 
-
 remote_file node['jboss7']['jboss_tar'] do
   source node['jboss7']['dl_url']
   owner node['jboss7']['jboss_user']
