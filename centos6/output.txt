@@ -1,0 +1,28 @@
+HTTP/1.1 200 OK
+Server: nginx/1.10.3
+Date: Thu, 06 Apr 2017 00:18:07 GMT
+Content-Type: text/html
+Content-Length: 612
+Last-Modified: Tue, 31 Jan 2017 15:38:08 GMT
+Connection: keep-alive
+ETag: "5890af60-264"
+Accept-Ranges: bytes
+
+HTTP/1.1 200 OK
+Server: nginx/1.10.3
+Date: Thu, 06 Apr 2017 00:18:19 GMT
+Content-Type: text/html
+Content-Length: 612
+Last-Modified: Tue, 31 Jan 2017 15:38:08 GMT
+Connection: keep-alive
+ETag: "5890af60-264"
+Accept-Ranges: bytes
+
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
