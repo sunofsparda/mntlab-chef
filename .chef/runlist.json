@@ -1,0 +1,3 @@
+{
+"run_list": ["recipe[java_se::default]", "recipe[jboss::default]"]
+}
