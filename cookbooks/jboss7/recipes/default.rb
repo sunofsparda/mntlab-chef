@@ -42,20 +42,20 @@ tar_extract node['jboss7']['jboss_tar'] do
   creates node['jboss7']['jboss_check']
 end
 
-# template "#{node['jboss7']['jboss_home']}/standalone/configuration/standalone.xml" do
-#   source 'standalone_xml.erb'
-#   owner node['jboss7']['jboss_user']
-#   group node['jboss7']['jboss_group']
-#   mode '0644'
-#   notifies :restart, 'service[jboss7]', :delayed
-# end
+template "#{node['jboss7']['jboss_home']}/standalone/configuration/standalone.xml" do
+  source 'standalone_xml.erb'
+  owner node['jboss7']['jboss_user']
+  group node['jboss7']['jboss_group']
+  mode '0644'
+  notifies :restart, 'service[jboss7]', :delayed
+end
 
-# template "#{node['jboss7']['jboss_home']}/bin/standalone.conf" do
-#   source 'standalone_conf.erb'
-#   owner node['jboss7']['jboss_user']
-#   group node['jboss7']['jboss_group']
-#   mode '0644'
-#   notifies :restart, 'service[jboss7]', :delayed
+template "#{node['jboss7']['jboss_home']}/bin/standalone.conf" do
+  source 'standalone_conf.erb'
+  owner node['jboss7']['jboss_user']
+  group node['jboss7']['jboss_group']
+  mode '0644'
+  notifies :restart, 'service[jboss7]', :delayed
 # end
 
 dist_dir, _conf_dir = value_for_platform_family(
@@ -64,7 +64,7 @@ dist_dir, _conf_dir = value_for_platform_family(
 )
 
 # template '/etc/jboss-as.conf' do
-#   source "#{dist_dir}/jboss-as.conf.erb"
+#   source "#{dist_dir}/jboss-as_conf.erb"
 #   mode 0775
 #   owner 'root'
 #   group node['root_group']

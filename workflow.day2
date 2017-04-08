@@ -5,9 +5,16 @@
 +3. Download jdk cookbook from Opscode community cookbooks site
 +4. Create jboss cookbook and recipes using Opscode recipe DSL and resources http://docs.opscode.com/resource.html
 chef cookbook generate jboss7
+
+
 5. Jboss cookbook should install jboss package and setup jboss server, also it should contain recipes to start/stop/restart/reload jboss service.
+
+
 +6. Add jdk cookbook dependency to jboss cookbook
+
+
 7. Add recipes to install and configure jboss  
+
 8. Add recipe to deploy sample application http://www.cumulogic.com/download/Apps/testweb.zip
 9. Recipe should download, unpack and put application jars to Jboss deploy folder. Then restart Jboss.
 10. Setup new Vagrant VM install chef solo and configure knife
