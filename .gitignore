@@ -1,5 +1,8 @@
+.vagrant
 **/.vagrant
+/soft
 **/soft/
+
 # Bundler
 bin/*
 .bundle/*
