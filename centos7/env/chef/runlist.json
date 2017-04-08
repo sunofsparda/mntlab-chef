@@ -1,4 +1,0 @@
-{
-"run_list": ["recipe[firewall::default]", "recipe[chef_nginx::default]"],
-"chef_nginx": {"default_root":"/usr/share/nginx/html"}
-}
