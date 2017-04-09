@@ -15,7 +15,7 @@ echo '=========== GET_EXISTING_COOKBOOKS ==========='
 cp -r /vagrant/cookbooks /root/
 
 echo '=========== RUN_CHEF ==========='
-chef-solo -c /root/.chef/solo.rb > /vagrant/output.log
+chef-solo -c /root/.chef/solo.rb > /vagrant/report/output.log
 
 echo 'end of provision'
 echo 'please, ensure that env is ok'
