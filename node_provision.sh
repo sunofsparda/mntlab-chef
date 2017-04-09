@@ -1,18 +1,12 @@
 #!/bin/bash
 
 echo '========== CLEAN_ENV =========='
-echo 'Cleaning'
 rm /root/.chef/* -rf
 rm /root/cookbooks/* -rf
 rm /root/chef_cookbooks/* -rf
 
-# echo '=============== INIT ==============='
-# echo 'Preparing environment'
-# yum install -y git
-
 echo '============= INIT_CHEF ============='
-echo 'Installing Chef'
-yum localinstall -y /vagrant/soft/chef-*el6*.rpm
+yum localinstall -y /vagrant/soft/chef-*el6*.rpm > /dev/null 2>&1
 
 echo '=========== GET_CHEF_HOME ==========='
 cp -r /vagrant/.chef /root/

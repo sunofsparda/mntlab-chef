@@ -19,39 +19,40 @@ mkdir -p /root/chef_cookbooks
 
 echo '=========== GET_COOKBOOKS ==========='
 echo 'Downloading cookbooks'
-git clone https://github.com/agileorbit-cookbooks/java.git /root/chef_cookbooks/java 
+# git clone https://github.com/agileorbit-cookbooks/java.git /root/chef_cookbooks/java 
 # git clone https://github.com/dhoer/chef-java_se.git /root/chef_cookbooks/chef-java_se
-git clone https://github.com/chef-cookbooks/tar.git /root/chef_cookbooks/tar
-git clone https://github.com/chef-cookbooks/chef_nginx.git /root/chef_cookbooks/chef_nginx
-git clone https://github.com/chef-cookbooks/firewall.git /root/chef_cookbooks/firewall
+# git clone https://github.com/chef-cookbooks/tar.git /root/chef_cookbooks/tar
+# git clone https://github.com/chef-cookbooks/chef_nginx.git /root/chef_cookbooks/chef_nginx
+# git clone https://github.com/chef-cookbooks/firewall.git /root/chef_cookbooks/firewall
 # git clone https://github.com/chef-cookbooks/iptables.git /root/chef_cookbooks/iptables
+git clone https://github.com/poise/poise-archive.git /root/chef_cookbooks/poise-archive
 
 echo '========= INSTALL_COOKBOOKS ========='
 echo 'Installing cookbooks'
 
-cd /root/chef_cookbooks/java
+cd /root/chef_cookbooks/poise-archive
 berks install
 berks package
 tar -xf cookbooks-*.tar.gz -C /root/
 rm cookbooks-*tar.gz
 
-cd /root/chef_cookbooks/chef_nginx
-berks install
-berks package
-tar -xf cookbooks-*.tar.gz -C /root/
-rm cookbooks-*tar.gz
+# cd /root/chef_cookbooks/chef_nginx
+# berks install
+# berks package
+# tar -xf cookbooks-*.tar.gz -C /root/
+# rm cookbooks-*tar.gz
 
-cd /root/chef_cookbooks/firewall
-berks install
-berks package
-tar -xf cookbooks-*.tar.gz -C /root/
-rm cookbooks-*tar.gz
+# cd /root/chef_cookbooks/firewall
+# berks install
+# berks package
+# tar -xf cookbooks-*.tar.gz -C /root/
+# rm cookbooks-*tar.gz
 
-cd /root/chef_cookbooks/tar
-berks install
-berks package
-tar -xf cookbooks-*.tar.gz -C /root/
-rm cookbooks-*tar.gz
+# cd /root/chef_cookbooks/tar
+# berks install
+# berks package
+# tar -xf cookbooks-*.tar.gz -C /root/
+# rm cookbooks-*tar.gz
 
 echo '=========== UPLOAD_COOKBOOKS ==========='
 cp -r /root/cookbooks /vagrant/chef_repo
