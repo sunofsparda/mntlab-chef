@@ -5,13 +5,17 @@ Vagrant.configure("2") do |config|
   config.vm.box = "sbeliakou/centos-6.8-x86_64"
     
     # VM1
-    config.vm.define :svr do |dev_chef|
-      dev_chef.vm.host_name = "chef-server"
-      dev_chef.vm.network "private_network", ip:"192.168.100.101"
-      dev_chef.vm.provider :virtualbox do |vbox|
+    config.vm.define :svr do |svr_chef|
+      svr_chef.vm.host_name = "chef-server"
+      svr_chef.vm.network "private_network", ip:"192.168.100.101"
+      svr_chef.vm.provider :virtualbox do |vbox|
          vbox.customize ["modifyvm", :id, "--memory", "1024"]
       end
-      # dev_chef.vm.provision "shell", path: "dev_provision.sh"
+      # svr_chef.vm.provision "shell", path: "dev_provision.sh"
+      svr_chef.vm.provision "shell", inline: <<-SHELL
+        echo "192.168.100.102  chef-node1" >> /etc/hosts
+        yum -y localinstall /vagrant/soft/chef-server-core-12.14.0-1.el6.x86_64.rpm
+      SHELL
     end
 
     # VM2
@@ -22,6 +26,9 @@ Vagrant.configure("2") do |config|
         vbox.customize ["modifyvm", :id, "--memory", "512"]
       end  
       # node_chef.vm.provision "shell", path: "node_provision.sh"
+      node_chef.vm.provision "shell", inline: <<-SHELL
+        echo "192.168.100.101  chef-server" >> /etc/hosts
+      SHELL
     end
 
     # # VM3
