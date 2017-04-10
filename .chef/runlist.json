@@ -1,3 +1,3 @@
 {
-"run_list": ["recipe[java::default]", "recipe[jboss7::default]"]
+"run_list": ["recipe[jboss7::default]"]
 }
