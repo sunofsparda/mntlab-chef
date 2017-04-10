@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
       end
       # svr_chef.vm.provision "shell", path: "dev_provision.sh"
       svr_chef.vm.provision "shell", inline: <<-SHELL
-        echo "192.168.100.102  chef-node1" >> /etc/hosts
+        echo "192.168.100.102 chef-node1" >> /etc/hosts
         yum -y localinstall /vagrant/soft/chef-server-core-12.14.0-1.el6.x86_64.rpm
       SHELL
     end
@@ -27,7 +27,7 @@ Vagrant.configure("2") do |config|
       end  
       # node_chef.vm.provision "shell", path: "node_provision.sh"
       node_chef.vm.provision "shell", inline: <<-SHELL
-        echo "192.168.100.101  chef-server" >> /etc/hosts
+        echo "192.168.100.101 chef-server" >> /etc/hosts
       SHELL
     end
 
