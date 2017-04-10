@@ -1,298 +1,286 @@
-[2017-04-10T07:27:33+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
+[2017-04-10T07:34:40+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
   One version per cookbook
 
-[2017-04-10T07:27:33+01:00] INFO: Forking chef instance to converge...
-[2017-04-10T07:27:33+01:00] INFO: *** Chef 12.19.36 ***
-[2017-04-10T07:27:33+01:00] INFO: Platform: x86_64-linux
-[2017-04-10T07:27:33+01:00] INFO: Chef-client pid: 12451
-[2017-04-10T07:27:35+01:00] INFO: Setting the run_list to ["recipe[java::default]", "recipe[jboss7::default]"] from CLI options
-[2017-04-10T07:27:35+01:00] INFO: Run List is [recipe[java::default], recipe[jboss7::default]]
-[2017-04-10T07:27:35+01:00] INFO: Run List expands to [java::default, jboss7::default]
-[2017-04-10T07:27:35+01:00] INFO: Starting Chef Run for node-chef
-[2017-04-10T07:27:35+01:00] INFO: Running start handlers
-[2017-04-10T07:27:35+01:00] INFO: Start handlers complete.
-[2017-04-10T07:27:35+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
-[2017-04-10T07:27:35+01:00] INFO: Loading cookbooks [java@1.48.0, jboss7@0.1.0, apt@6.0.1, windows@3.0.4, homebrew@3.0.0, tar@2.0.0, ohai@5.0.3]
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/resources/alternatives.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/default_java_symlink.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/resources/ark.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/ibm.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/ibm_tar.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/providers/ark.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/oracle.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/homebrew.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/default.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/providers/alternatives.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/purge_packages.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/oracle_rpm.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/oracle_jce.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/set_attributes_from_version.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/set_java_home.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/windows.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/libraries/matchers.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/oracle_i386.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/libraries/provider_java_certificate.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/README.md in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/openjdk.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/attributes/default.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/recipes/notify.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/Gemfile in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/ISSUES.md in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/templates/default/jdk.sh.erb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/libraries/helpers.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/chefignore in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/travis-build.sh in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/recipes/configure.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/LICENSE in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/templates/default/oracle.jinfo.erb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/recipes/default.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/recipes/start.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/recipes/install.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/recipes/stop.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/libraries/resource_java_certificate.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/templates/default/ibm_jdk.installer.properties.erb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/attributes/default.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/java/metadata.json in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/templates/default/redhat/jboss-as_conf.erb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/templates/default/standalone_conf.erb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/README.md in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/recipes/deploy.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/metadata.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/.kitchen.yml in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/templates/default/debian/jboss7-init.erb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/templates/default/redhat/jboss7-init.erb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/apt/recipes/cacher-ng.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/chefignore in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/apt/recipes/default.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/apt/recipes/unattended-upgrades.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/jboss7/templates/default/standalone_xml.erb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/apt/recipes/cacher-client.rb in the cache.
-[2017-04-10T07:27:35+01:00] INFO: Storing updated cookbooks/apt/libraries/helpers.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/attributes/default.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/files/default/apt-proxy-v2.conf in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/jboss7/Berksfile in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/libraries/matchers.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/resources/preference.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/templates/default/10recommends.erb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/templates/default/10dpkg-options.erb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/providers/preference.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/files/default/15update-stamp in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/templates/default/acng.conf.erb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/CONTRIBUTING.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/auto_run.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/templates/default/50unattended-upgrades.erb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/MAINTAINERS.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/certificate.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/certificate_binding.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/metadata.json in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/README.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/feature.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/CHANGELOG.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/feature_servermanagercmd.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/templates/default/01proxy.erb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/font.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/templates/default/20auto-upgrades.erb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/apt/templates/default/unattended-upgrades.seed.erb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/path.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/printer.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/share.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/shortcut.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/feature_powershell.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/task.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/zipfile.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/libraries/matchers.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/feature_dism.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/pagefile.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/printer_port.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/libraries/version_helper.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/libraries/windows_privileged.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/libraries/powershell_helper.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/libraries/wmi_helper.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/resources/http_acl.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/attributes/default.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/libraries/version.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/README.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/MAINTAINERS.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/.foodcritic in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/libraries/registry_helper.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/recipes/default.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/resources/tap.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/providers/cask.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/providers/tap.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/CHANGELOG.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/libraries/windows_helper.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/files/dism_features.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/CONTRIBUTING.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/recipes/install_casks.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/windows/metadata.json in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/resources/cask.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/recipes/install_formulas.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/libraries/homebrew_mixin.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/libraries/matchers.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/attributes/default.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/recipes/cask.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/recipes/install_taps.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/MAINTAINERS.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/README.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/CHANGELOG.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/tar/resources/extract.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/tar/libraries/matchers.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/CONTRIBUTING.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/recipes/default.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/tar/Gemfile in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/tar/metadata.json in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/tar/chefignore in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/tar/README.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/homebrew/metadata.json in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/tar/recipes/default.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/ohai/resources/hint.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/ohai/recipes/default.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/ohai/README.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/ohai/.foodcritic in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/ohai/CONTRIBUTING.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/ohai/MAINTAINERS.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/ohai/resources/plugin.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/ohai/CHANGELOG.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/tar/resources/package.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/tar/LICENSE in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/tar/MAINTAINERS.md in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/ohai/libraries/matchers.rb in the cache.
-[2017-04-10T07:27:36+01:00] INFO: Storing updated cookbooks/ohai/metadata.json in the cache.
-[2017-04-10T07:27:36+01:00] WARN: Specifying command attribute on a script resource is a coding error, use the 'code' attribute, or the execute resource
-[2017-04-10T07:27:36+01:00] WARN: This attribute is deprecated and must be fixed or this code will fail on Chef 13
-[2017-04-10T07:27:36+01:00] INFO: Processing log[jdk-version-changed] action nothing (java::notify line 29)
-[2017-04-10T07:27:36+01:00] INFO: Processing yum_package[java-1.7.0-openjdk] action install (java::openjdk line 53)
-[2017-04-10T07:27:39+01:00] INFO: Processing yum_package[java-1.7.0-openjdk-devel] action install (java::openjdk line 53)
-[2017-04-10T07:27:39+01:00] INFO: Processing java_alternatives[set-java-alternatives] action set (java::openjdk line 59)
-[2017-04-10T07:27:44+01:00] INFO: Processing directory[/etc/profile.d] action create (java::set_java_home line 19)
-[2017-04-10T07:27:44+01:00] INFO: Processing template[/etc/profile.d/jdk.sh] action create (java::set_java_home line 23)
-[2017-04-10T07:27:44+01:00] INFO: Processing group[jboss] action create (jboss7::install line 7)
-[2017-04-10T07:27:44+01:00] INFO: Processing linux_user[jboss] action create (jboss7::install line 11)
-[2017-04-10T07:27:44+01:00] INFO: Processing remote_file[/tmp/jboss-as-7.1.1.Final.tar.gz] action create_if_missing (jboss7::install line 29)
-[2017-04-10T07:27:44+01:00] INFO: Processing tar_extract[/tmp/jboss-as-7.1.1.Final.tar.gz] action extract_local (jboss7::install line 36)
-[2017-04-10T07:27:44+01:00] INFO: Processing execute[extract /tmp/jboss-as-7.1.1.Final.tar.gz] action run (/root/.chef/cookbooks/tar/resources/extract.rb line 83)
-[2017-04-10T07:27:44+01:00] INFO: Processing template[/opt/jboss/standalone/configuration/standalone.xml] action create (jboss7::configure line 7)
-[2017-04-10T07:27:44+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] backed up to /root/.chef/local-mode-cache/backup/opt/jboss/standalone/configuration/standalone.xml.chef-20170410072744.716604
-[2017-04-10T07:27:44+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] updated file contents /opt/jboss/standalone/configuration/standalone.xml
-[2017-04-10T07:27:44+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] mode changed to 644
-[2017-04-10T07:27:44+01:00] INFO: Processing template[/opt/jboss/bin/standalone.conf] action create (jboss7::configure line 15)
-[2017-04-10T07:27:44+01:00] INFO: Processing template[/etc/jboss-as.conf] action create (jboss7::configure line 28)
-[2017-04-10T07:27:44+01:00] INFO: Processing template[/etc/init.d/jboss7] action create (jboss7::configure line 37)
-[2017-04-10T07:27:44+01:00] INFO: Processing service[jboss7] action enable (jboss7::configure line 52)
-[2017-04-10T07:27:44+01:00] INFO: Processing service[jboss7] action start (jboss7::configure line 52)
-[2017-04-10T07:27:44+01:00] INFO: Processing yum_package[unzip] action install (jboss7::deploy line 7)
-[2017-04-10T07:27:44+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (jboss7::deploy line 11)
-[2017-04-10T07:27:44+01:00] INFO: Processing bash[deploy application] action run (jboss7::deploy line 18)
-[2017-04-10T07:27:44+01:00] WARN: bash[deploy application]: No code attribute was given, resource does nothing, this behavior is deprecated and will be removed in Chef-13
-[2017-04-10T07:27:45+01:00] INFO: bash[deploy application] ran successfully
-[2017-04-10T07:27:45+01:00] INFO: bash[deploy application] sending restart action to service[jboss7] (immediate)
-[2017-04-10T07:27:45+01:00] INFO: Processing service[jboss7] action restart (jboss7::configure line 52)
-[2017-04-10T07:27:51+01:00] INFO: service[jboss7] restarted
-[2017-04-10T07:27:51+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] sending restart action to service[jboss7] (delayed)
-[2017-04-10T07:27:51+01:00] INFO: Processing service[jboss7] action restart (jboss7::configure line 52)
-[2017-04-10T07:27:56+01:00] INFO: service[jboss7] restarted
-[2017-04-10T07:27:56+01:00] INFO: Chef Run complete in 21.402097739 seconds
-[2017-04-10T07:27:56+01:00] INFO: Running report handlers
-[2017-04-10T07:27:56+01:00] INFO: Report handlers complete
-[2017-04-10T07:27:58+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
+[2017-04-10T07:34:40+01:00] INFO: Forking chef instance to converge...
+[2017-04-10T07:34:40+01:00] INFO: *** Chef 12.19.36 ***
+[2017-04-10T07:34:40+01:00] INFO: Platform: x86_64-linux
+[2017-04-10T07:34:40+01:00] INFO: Chef-client pid: 7687
+[2017-04-10T07:34:42+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: chefzero://localhost:8889/nodes/node-chef
+[2017-04-10T07:34:42+01:00] INFO: Setting the run_list to ["recipe[java::default]", "recipe[jboss7::default]"] from CLI options
+[2017-04-10T07:34:42+01:00] INFO: Run List is [recipe[java::default], recipe[jboss7::default]]
+[2017-04-10T07:34:42+01:00] INFO: Run List expands to [java::default, jboss7::default]
+[2017-04-10T07:34:42+01:00] INFO: Starting Chef Run for node-chef
+[2017-04-10T07:34:42+01:00] INFO: Running start handlers
+[2017-04-10T07:34:42+01:00] INFO: Start handlers complete.
+[2017-04-10T07:34:42+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2017-04-10T07:34:43+01:00] INFO: Loading cookbooks [java@1.48.0, jboss7@0.1.0, apt@6.0.1, windows@3.0.4, homebrew@3.0.0, tar@2.0.0, ohai@5.0.3]
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/resources/alternatives.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/default.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/default_java_symlink.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/providers/ark.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/homebrew.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/ibm.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/resources/ark.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/providers/alternatives.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/oracle.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/oracle_i386.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/oracle_jce.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/notify.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/openjdk.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/windows.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/set_java_home.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/oracle_rpm.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/libraries/matchers.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/libraries/provider_java_certificate.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/templates/default/jdk.sh.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/attributes/default.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/templates/default/oracle.jinfo.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/README.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/set_attributes_from_version.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/libraries/resource_java_certificate.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/ibm_tar.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/recipes/purge_packages.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/LICENSE in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/templates/default/ibm_jdk.installer.properties.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/travis-build.sh in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/Gemfile in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/recipes/configure.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/recipes/deploy.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/recipes/start.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/metadata.json in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/recipes/stop.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/attributes/default.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/recipes/default.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/templates/default/redhat/jboss-as_conf.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/templates/default/standalone_conf.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/libraries/helpers.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/templates/default/standalone_xml.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/README.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/templates/default/debian/jboss7-init.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/ISSUES.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/recipes/install.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/Berksfile in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/templates/default/redhat/jboss7-init.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/java/chefignore in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/chefignore in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/providers/preference.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/recipes/cacher-client.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/metadata.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/recipes/cacher-ng.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/recipes/unattended-upgrades.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/libraries/helpers.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/jboss7/.kitchen.yml in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/templates/default/01proxy.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/files/default/15update-stamp in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/templates/default/10dpkg-options.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/templates/default/20auto-upgrades.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/resources/preference.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/libraries/matchers.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/templates/default/unattended-upgrades.seed.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/recipes/default.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/templates/default/50unattended-upgrades.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/files/default/apt-proxy-v2.conf in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/metadata.json in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/README.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/templates/default/10recommends.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/attributes/default.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/certificate_binding.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/feature.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/certificate.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/CHANGELOG.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/feature_servermanagercmd.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/templates/default/acng.conf.erb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/pagefile.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/MAINTAINERS.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/feature_dism.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/apt/CONTRIBUTING.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/shortcut.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/auto_run.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/http_acl.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/printer_port.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/feature_powershell.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/printer.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/libraries/registry_helper.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/libraries/powershell_helper.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/path.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/font.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/share.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/libraries/version.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/libraries/windows_helper.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/libraries/windows_privileged.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/recipes/default.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/task.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/files/dism_features.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/libraries/version_helper.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/CONTRIBUTING.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/.foodcritic in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/MAINTAINERS.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/resources/zipfile.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/CHANGELOG.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/metadata.json in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/libraries/matchers.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/resources/cask.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/attributes/default.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/recipes/cask.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/resources/tap.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/README.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/recipes/install_casks.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/recipes/install_formulas.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/recipes/install_taps.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/windows/libraries/wmi_helper.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/libraries/matchers.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/libraries/homebrew_mixin.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/attributes/default.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/MAINTAINERS.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/providers/tap.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/CHANGELOG.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/tar/resources/extract.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/providers/cask.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/CONTRIBUTING.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/tar/libraries/matchers.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/tar/README.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/tar/Gemfile in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/recipes/default.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/tar/metadata.json in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/tar/MAINTAINERS.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/tar/resources/package.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/tar/recipes/default.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/README.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/ohai/resources/hint.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/homebrew/metadata.json in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/ohai/resources/plugin.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/tar/chefignore in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/ohai/CONTRIBUTING.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/ohai/README.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/ohai/metadata.json in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/ohai/recipes/default.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/ohai/.foodcritic in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/tar/LICENSE in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/ohai/CHANGELOG.md in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/ohai/libraries/matchers.rb in the cache.
+[2017-04-10T07:34:43+01:00] INFO: Storing updated cookbooks/ohai/MAINTAINERS.md in the cache.
+[2017-04-10T07:34:43+01:00] WARN: Specifying command attribute on a script resource is a coding error, use the 'code' attribute, or the execute resource
+[2017-04-10T07:34:43+01:00] WARN: This attribute is deprecated and must be fixed or this code will fail on Chef 13
+[2017-04-10T07:34:43+01:00] INFO: Processing log[jdk-version-changed] action nothing (java::notify line 29)
+[2017-04-10T07:34:43+01:00] INFO: Processing yum_package[java-1.7.0-openjdk] action install (java::openjdk line 53)
+[2017-04-10T07:34:47+01:00] INFO: yum_package[java-1.7.0-openjdk] installing java-1.7.0-openjdk-1.7.0.131-2.6.9.0.el6_8 from base repository
+[2017-04-10T07:35:39+01:00] INFO: yum_package[java-1.7.0-openjdk] installed java-1.7.0-openjdk at 1.7.0.131-2.6.9.0.el6_8
+[2017-04-10T07:35:39+01:00] INFO: yum_package[java-1.7.0-openjdk] sending write action to log[jdk-version-changed] (immediate)
+[2017-04-10T07:35:39+01:00] INFO: Processing log[jdk-version-changed] action write (java::notify line 29)
+[2017-04-10T07:35:39+01:00] INFO: A new version of java was installed
+[2017-04-10T07:35:39+01:00] INFO: Processing yum_package[java-1.7.0-openjdk-devel] action install (java::openjdk line 53)
+[2017-04-10T07:35:40+01:00] INFO: yum_package[java-1.7.0-openjdk-devel] installing java-1.7.0-openjdk-devel-1.7.0.131-2.6.9.0.el6_8 from base repository
+[2017-04-10T07:35:49+01:00] INFO: yum_package[java-1.7.0-openjdk-devel] installed java-1.7.0-openjdk-devel at 1.7.0.131-2.6.9.0.el6_8
+[2017-04-10T07:35:49+01:00] INFO: yum_package[java-1.7.0-openjdk-devel] sending write action to log[jdk-version-changed] (immediate)
+[2017-04-10T07:35:49+01:00] INFO: Processing log[jdk-version-changed] action write (java::notify line 29)
+[2017-04-10T07:35:49+01:00] INFO: A new version of java was installed
+[2017-04-10T07:35:49+01:00] INFO: Processing java_alternatives[set-java-alternatives] action set (java::openjdk line 59)
+[2017-04-10T07:36:00+01:00] INFO: Processing directory[/etc/profile.d] action create (java::set_java_home line 19)
+[2017-04-10T07:36:00+01:00] INFO: Processing template[/etc/profile.d/jdk.sh] action create (java::set_java_home line 23)
+[2017-04-10T07:36:00+01:00] INFO: template[/etc/profile.d/jdk.sh] created file /etc/profile.d/jdk.sh
+[2017-04-10T07:36:00+01:00] INFO: template[/etc/profile.d/jdk.sh] updated file contents /etc/profile.d/jdk.sh
+[2017-04-10T07:36:00+01:00] INFO: template[/etc/profile.d/jdk.sh] mode changed to 755
+[2017-04-10T07:36:00+01:00] INFO: Processing group[jboss] action create (jboss7::install line 7)
+[2017-04-10T07:36:01+01:00] INFO: group[jboss] created
+[2017-04-10T07:36:01+01:00] INFO: Processing linux_user[jboss] action create (jboss7::install line 11)
+[2017-04-10T07:36:01+01:00] INFO: linux_user[jboss] created
+[2017-04-10T07:36:01+01:00] INFO: Processing remote_file[/tmp/jboss-as-7.1.1.Final.tar.gz] action create_if_missing (jboss7::install line 29)
+[2017-04-10T07:37:58+01:00] INFO: remote_file[/tmp/jboss-as-7.1.1.Final.tar.gz] created file /tmp/jboss-as-7.1.1.Final.tar.gz
+[2017-04-10T07:37:58+01:00] INFO: remote_file[/tmp/jboss-as-7.1.1.Final.tar.gz] updated file contents /tmp/jboss-as-7.1.1.Final.tar.gz
+[2017-04-10T07:37:58+01:00] INFO: remote_file[/tmp/jboss-as-7.1.1.Final.tar.gz] owner changed to 497
+[2017-04-10T07:37:58+01:00] INFO: remote_file[/tmp/jboss-as-7.1.1.Final.tar.gz] group changed to 497
+[2017-04-10T07:37:58+01:00] INFO: Processing tar_extract[/tmp/jboss-as-7.1.1.Final.tar.gz] action extract_local (jboss7::install line 36)
+[2017-04-10T07:37:58+01:00] INFO: Processing execute[extract /tmp/jboss-as-7.1.1.Final.tar.gz] action run (/root/.chef/cookbooks/tar/resources/extract.rb line 83)
+[2017-04-10T07:38:00+01:00] INFO: execute[extract /tmp/jboss-as-7.1.1.Final.tar.gz] ran successfully
+[2017-04-10T07:38:00+01:00] INFO: Processing template[/opt/jboss/standalone/configuration/standalone.xml] action create (jboss7::configure line 7)
+[2017-04-10T07:38:00+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] backed up to /root/.chef/local-mode-cache/backup/opt/jboss/standalone/configuration/standalone.xml.chef-20170410073800.922757
+[2017-04-10T07:38:00+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] updated file contents /opt/jboss/standalone/configuration/standalone.xml
+[2017-04-10T07:38:00+01:00] INFO: Processing template[/opt/jboss/bin/standalone.conf] action create (jboss7::configure line 15)
+[2017-04-10T07:38:00+01:00] INFO: template[/opt/jboss/bin/standalone.conf] backed up to /root/.chef/local-mode-cache/backup/opt/jboss/bin/standalone.conf.chef-20170410073800.932790
+[2017-04-10T07:38:00+01:00] INFO: template[/opt/jboss/bin/standalone.conf] updated file contents /opt/jboss/bin/standalone.conf
+[2017-04-10T07:38:00+01:00] INFO: template[/opt/jboss/bin/standalone.conf] not queuing delayed action restart on service[jboss7] (delayed), as it's already been queued
+[2017-04-10T07:38:00+01:00] INFO: Processing template[/etc/jboss-as.conf] action create (jboss7::configure line 28)
+[2017-04-10T07:38:00+01:00] INFO: template[/etc/jboss-as.conf] created file /etc/jboss-as.conf
+[2017-04-10T07:38:00+01:00] INFO: template[/etc/jboss-as.conf] updated file contents /etc/jboss-as.conf
+[2017-04-10T07:38:00+01:00] INFO: template[/etc/jboss-as.conf] owner changed to 0
+[2017-04-10T07:38:00+01:00] INFO: template[/etc/jboss-as.conf] group changed to 0
+[2017-04-10T07:38:00+01:00] INFO: template[/etc/jboss-as.conf] mode changed to 775
+[2017-04-10T07:38:00+01:00] INFO: template[/etc/jboss-as.conf] not queuing delayed action restart on service[jboss7] (delayed), as it's already been queued
+[2017-04-10T07:38:00+01:00] INFO: Processing template[/etc/init.d/jboss7] action create (jboss7::configure line 37)
+[2017-04-10T07:38:00+01:00] INFO: template[/etc/init.d/jboss7] created file /etc/init.d/jboss7
+[2017-04-10T07:38:00+01:00] INFO: template[/etc/init.d/jboss7] updated file contents /etc/init.d/jboss7
+[2017-04-10T07:38:00+01:00] INFO: template[/etc/init.d/jboss7] owner changed to 0
+[2017-04-10T07:38:00+01:00] INFO: template[/etc/init.d/jboss7] group changed to 0
+[2017-04-10T07:38:00+01:00] INFO: template[/etc/init.d/jboss7] mode changed to 775
+[2017-04-10T07:38:00+01:00] INFO: template[/etc/init.d/jboss7] not queuing delayed action restart on service[jboss7] (delayed), as it's already been queued
+[2017-04-10T07:38:00+01:00] INFO: Processing service[jboss7] action enable (jboss7::configure line 52)
+[2017-04-10T07:38:01+01:00] INFO: service[jboss7] enabled
+[2017-04-10T07:38:01+01:00] INFO: Processing service[jboss7] action start (jboss7::configure line 52)
+[2017-04-10T07:38:06+01:00] INFO: service[jboss7] started
+[2017-04-10T07:38:06+01:00] INFO: Processing yum_package[unzip] action install (jboss7::deploy line 7)
+[2017-04-10T07:38:07+01:00] INFO: yum_package[unzip] installing unzip-6.0-5.el6 from base repository
+[2017-04-10T07:38:08+01:00] INFO: yum_package[unzip] installed unzip at 6.0-5.el6
+[2017-04-10T07:38:08+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (jboss7::deploy line 11)
+[2017-04-10T07:38:09+01:00] INFO: remote_file[/tmp/testweb.zip] created file /tmp/testweb.zip
+[2017-04-10T07:38:09+01:00] INFO: remote_file[/tmp/testweb.zip] updated file contents /tmp/testweb.zip
+[2017-04-10T07:38:09+01:00] INFO: remote_file[/tmp/testweb.zip] owner changed to 497
+[2017-04-10T07:38:09+01:00] INFO: remote_file[/tmp/testweb.zip] group changed to 497
+[2017-04-10T07:38:09+01:00] INFO: Processing bash[deploy application] action run (jboss7::deploy line 18)
+[2017-04-10T07:38:09+01:00] WARN: bash[deploy application]: No code attribute was given, resource does nothing, this behavior is deprecated and will be removed in Chef-13
+[2017-04-10T07:38:09+01:00] INFO: bash[deploy application] ran successfully
+[2017-04-10T07:38:09+01:00] INFO: bash[deploy application] sending restart action to service[jboss7] (immediate)
+[2017-04-10T07:38:09+01:00] INFO: Processing service[jboss7] action restart (jboss7::configure line 52)
+[2017-04-10T07:38:15+01:00] INFO: service[jboss7] restarted
+[2017-04-10T07:38:15+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] sending restart action to service[jboss7] (delayed)
+[2017-04-10T07:38:15+01:00] INFO: Processing service[jboss7] action restart (jboss7::configure line 52)
+[2017-04-10T07:38:20+01:00] INFO: service[jboss7] restarted
+[2017-04-10T07:38:20+01:00] INFO: template[/etc/init.d/jboss7] sending enable action to service[jboss7] (delayed)
+[2017-04-10T07:38:20+01:00] INFO: Processing service[jboss7] action enable (jboss7::configure line 52)
+[2017-04-10T07:38:20+01:00] INFO: Chef Run complete in 217.589265904 seconds
+[2017-04-10T07:38:20+01:00] INFO: Running report handlers
+[2017-04-10T07:38:20+01:00] INFO: Report handlers complete
+[2017-04-10T07:38:22+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
   One version per cookbook
 
-[2017-04-10T07:27:58+01:00] INFO: Forking chef instance to converge...
-[2017-04-10T07:27:58+01:00] INFO: *** Chef 12.19.36 ***
-[2017-04-10T07:27:58+01:00] INFO: Platform: x86_64-linux
-[2017-04-10T07:27:58+01:00] INFO: Chef-client pid: 13794
-[2017-04-10T07:28:00+01:00] INFO: Setting the run_list to ["recipe[java::default]", "recipe[jboss7::default]"] from CLI options
-[2017-04-10T07:28:00+01:00] INFO: Run List is [recipe[java::default], recipe[jboss7::default]]
-[2017-04-10T07:28:00+01:00] INFO: Run List expands to [java::default, jboss7::default]
-[2017-04-10T07:28:00+01:00] INFO: Starting Chef Run for node-chef
-[2017-04-10T07:28:00+01:00] INFO: Running start handlers
-[2017-04-10T07:28:00+01:00] INFO: Start handlers complete.
-[2017-04-10T07:28:00+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
-[2017-04-10T07:28:01+01:00] INFO: Loading cookbooks [java@1.48.0, jboss7@0.1.0, apt@6.0.1, windows@3.0.4, homebrew@3.0.0, tar@2.0.0, ohai@5.0.3]
-[2017-04-10T07:28:01+01:00] WARN: Specifying command attribute on a script resource is a coding error, use the 'code' attribute, or the execute resource
-[2017-04-10T07:28:01+01:00] WARN: This attribute is deprecated and must be fixed or this code will fail on Chef 13
-[2017-04-10T07:28:01+01:00] INFO: Processing log[jdk-version-changed] action nothing (java::notify line 29)
-[2017-04-10T07:28:01+01:00] INFO: Processing yum_package[java-1.7.0-openjdk] action install (java::openjdk line 53)
-[2017-04-10T07:28:05+01:00] INFO: Processing yum_package[java-1.7.0-openjdk-devel] action install (java::openjdk line 53)
-[2017-04-10T07:28:05+01:00] INFO: Processing java_alternatives[set-java-alternatives] action set (java::openjdk line 59)
-[2017-04-10T07:28:09+01:00] INFO: Processing directory[/etc/profile.d] action create (java::set_java_home line 19)
-[2017-04-10T07:28:09+01:00] INFO: Processing template[/etc/profile.d/jdk.sh] action create (java::set_java_home line 23)
-[2017-04-10T07:28:09+01:00] INFO: Processing group[jboss] action create (jboss7::install line 7)
-[2017-04-10T07:28:09+01:00] INFO: Processing linux_user[jboss] action create (jboss7::install line 11)
-[2017-04-10T07:28:09+01:00] INFO: Processing remote_file[/tmp/jboss-as-7.1.1.Final.tar.gz] action create_if_missing (jboss7::install line 29)
-[2017-04-10T07:28:09+01:00] INFO: Processing tar_extract[/tmp/jboss-as-7.1.1.Final.tar.gz] action extract_local (jboss7::install line 36)
-[2017-04-10T07:28:09+01:00] INFO: Processing execute[extract /tmp/jboss-as-7.1.1.Final.tar.gz] action run (/root/.chef/cookbooks/tar/resources/extract.rb line 83)
-[2017-04-10T07:28:09+01:00] INFO: Processing template[/opt/jboss/standalone/configuration/standalone.xml] action create (jboss7::configure line 7)
-[2017-04-10T07:28:09+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] backed up to /root/.chef/local-mode-cache/backup/opt/jboss/standalone/configuration/standalone.xml.chef-20170410072809.121154
-[2017-04-10T07:28:09+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] updated file contents /opt/jboss/standalone/configuration/standalone.xml
-[2017-04-10T07:28:09+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] mode changed to 644
-[2017-04-10T07:28:09+01:00] INFO: Processing template[/opt/jboss/bin/standalone.conf] action create (jboss7::configure line 15)
-[2017-04-10T07:28:09+01:00] INFO: Processing template[/etc/jboss-as.conf] action create (jboss7::configure line 28)
-[2017-04-10T07:28:09+01:00] INFO: Processing template[/etc/init.d/jboss7] action create (jboss7::configure line 37)
-[2017-04-10T07:28:09+01:00] INFO: Processing service[jboss7] action enable (jboss7::configure line 52)
-[2017-04-10T07:28:09+01:00] INFO: Processing service[jboss7] action start (jboss7::configure line 52)
-[2017-04-10T07:28:09+01:00] INFO: Processing yum_package[unzip] action install (jboss7::deploy line 7)
-[2017-04-10T07:28:09+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (jboss7::deploy line 11)
-[2017-04-10T07:28:09+01:00] INFO: Processing bash[deploy application] action run (jboss7::deploy line 18)
-[2017-04-10T07:28:09+01:00] WARN: bash[deploy application]: No code attribute was given, resource does nothing, this behavior is deprecated and will be removed in Chef-13
-[2017-04-10T07:28:09+01:00] INFO: bash[deploy application] ran successfully
-[2017-04-10T07:28:09+01:00] INFO: bash[deploy application] sending restart action to service[jboss7] (immediate)
-[2017-04-10T07:28:09+01:00] INFO: Processing service[jboss7] action restart (jboss7::configure line 52)
-[2017-04-10T07:28:15+01:00] INFO: service[jboss7] restarted
-[2017-04-10T07:28:15+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] sending restart action to service[jboss7] (delayed)
-[2017-04-10T07:28:15+01:00] INFO: Processing service[jboss7] action restart (jboss7::configure line 52)
-[2017-04-10T07:28:20+01:00] INFO: service[jboss7] restarted
-[2017-04-10T07:28:21+01:00] INFO: Chef Run complete in 20.111513653 seconds
-[2017-04-10T07:28:21+01:00] INFO: Running report handlers
-[2017-04-10T07:28:21+01:00] INFO: Report handlers complete
-[2017-04-10T07:28:49+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
-  One version per cookbook
-
-[2017-04-10T07:28:49+01:00] INFO: Forking chef instance to converge...
-[2017-04-10T07:28:49+01:00] INFO: *** Chef 12.19.36 ***
-[2017-04-10T07:28:49+01:00] INFO: Platform: x86_64-linux
-[2017-04-10T07:28:49+01:00] INFO: Chef-client pid: 15137
-[2017-04-10T07:28:52+01:00] INFO: Setting the run_list to ["recipe[java::default]", "recipe[jboss7::default]"] from CLI options
-[2017-04-10T07:28:52+01:00] INFO: Run List is [recipe[java::default], recipe[jboss7::default]]
-[2017-04-10T07:28:52+01:00] INFO: Run List expands to [java::default, jboss7::default]
-[2017-04-10T07:28:52+01:00] INFO: Starting Chef Run for node-chef
-[2017-04-10T07:28:52+01:00] INFO: Running start handlers
-[2017-04-10T07:28:52+01:00] INFO: Start handlers complete.
-[2017-04-10T07:28:52+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
-[2017-04-10T07:28:52+01:00] INFO: Loading cookbooks [java@1.48.0, jboss7@0.1.0, apt@6.0.1, windows@3.0.4, homebrew@3.0.0, tar@2.0.0, ohai@5.0.3]
-[2017-04-10T07:28:52+01:00] WARN: Specifying command attribute on a script resource is a coding error, use the 'code' attribute, or the execute resource
-[2017-04-10T07:28:52+01:00] WARN: This attribute is deprecated and must be fixed or this code will fail on Chef 13
-[2017-04-10T07:28:52+01:00] INFO: Processing log[jdk-version-changed] action nothing (java::notify line 29)
-[2017-04-10T07:28:52+01:00] INFO: Processing yum_package[java-1.7.0-openjdk] action install (java::openjdk line 53)
-[2017-04-10T07:28:55+01:00] INFO: Processing yum_package[java-1.7.0-openjdk-devel] action install (java::openjdk line 53)
-[2017-04-10T07:28:55+01:00] INFO: Processing java_alternatives[set-java-alternatives] action set (java::openjdk line 59)
-[2017-04-10T07:28:58+01:00] INFO: Processing directory[/etc/profile.d] action create (java::set_java_home line 19)
-[2017-04-10T07:28:58+01:00] INFO: Processing template[/etc/profile.d/jdk.sh] action create (java::set_java_home line 23)
-[2017-04-10T07:28:58+01:00] INFO: Processing group[jboss] action create (jboss7::install line 7)
-[2017-04-10T07:28:58+01:00] INFO: Processing linux_user[jboss] action create (jboss7::install line 11)
-[2017-04-10T07:28:58+01:00] INFO: Processing remote_file[/tmp/jboss-as-7.1.1.Final.tar.gz] action create_if_missing (jboss7::install line 29)
-[2017-04-10T07:28:58+01:00] INFO: Processing tar_extract[/tmp/jboss-as-7.1.1.Final.tar.gz] action extract_local (jboss7::install line 36)
-[2017-04-10T07:28:58+01:00] INFO: Processing execute[extract /tmp/jboss-as-7.1.1.Final.tar.gz] action run (/root/.chef/cookbooks/tar/resources/extract.rb line 83)
-[2017-04-10T07:28:58+01:00] INFO: Processing template[/opt/jboss/standalone/configuration/standalone.xml] action create (jboss7::configure line 7)
-[2017-04-10T07:28:58+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] backed up to /root/.chef/local-mode-cache/backup/opt/jboss/standalone/configuration/standalone.xml.chef-20170410072858.927684
-[2017-04-10T07:28:58+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] updated file contents /opt/jboss/standalone/configuration/standalone.xml
-[2017-04-10T07:28:58+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] mode changed to 644
-[2017-04-10T07:28:58+01:00] INFO: Processing template[/opt/jboss/bin/standalone.conf] action create (jboss7::configure line 15)
-[2017-04-10T07:28:58+01:00] INFO: Processing template[/etc/jboss-as.conf] action create (jboss7::configure line 28)
-[2017-04-10T07:28:58+01:00] INFO: Processing template[/etc/init.d/jboss7] action create (jboss7::configure line 37)
-[2017-04-10T07:28:58+01:00] INFO: Processing service[jboss7] action enable (jboss7::configure line 52)
-[2017-04-10T07:28:59+01:00] INFO: Processing service[jboss7] action start (jboss7::configure line 52)
-[2017-04-10T07:28:59+01:00] INFO: Processing yum_package[unzip] action install (jboss7::deploy line 7)
-[2017-04-10T07:28:59+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (jboss7::deploy line 11)
-[2017-04-10T07:28:59+01:00] INFO: Processing bash[deploy application] action run (jboss7::deploy line 18)
-[2017-04-10T07:28:59+01:00] WARN: bash[deploy application]: No code attribute was given, resource does nothing, this behavior is deprecated and will be removed in Chef-13
-[2017-04-10T07:28:59+01:00] INFO: bash[deploy application] ran successfully
-[2017-04-10T07:28:59+01:00] INFO: bash[deploy application] sending restart action to service[jboss7] (immediate)
-[2017-04-10T07:28:59+01:00] INFO: Processing service[jboss7] action restart (jboss7::configure line 52)
-[2017-04-10T07:29:05+01:00] INFO: service[jboss7] restarted
-[2017-04-10T07:29:05+01:00] INFO: template[/opt/jboss/standalone/configuration/standalone.xml] sending restart action to service[jboss7] (delayed)
-[2017-04-10T07:29:05+01:00] INFO: Processing service[jboss7] action restart (jboss7::configure line 52)
-[2017-04-10T07:29:11+01:00] INFO: service[jboss7] restarted
-[2017-04-10T07:29:11+01:00] INFO: Chef Run complete in 19.710348403 seconds
-[2017-04-10T07:29:11+01:00] INFO: Running report handlers
-[2017-04-10T07:29:11+01:00] INFO: Report handlers complete
+[2017-04-10T07:38:22+01:00] INFO: Forking chef instance to converge...
+[2017-04-10T07:38:22+01:00] INFO: *** Chef 12.19.36 ***
+[2017-04-10T07:38:22+01:00] INFO: Platform: x86_64-linux
+[2017-04-10T07:38:22+01:00] INFO: Chef-client pid: 9586
+[2017-04-10T07:38:26+01:00] INFO: Setting the run_list to ["recipe[java::default]", "recipe[jboss7::default]"] from CLI options
+[2017-04-10T07:38:26+01:00] INFO: Run List is [recipe[java::default], recipe[jboss7::default]]
+[2017-04-10T07:38:26+01:00] INFO: Run List expands to [java::default, jboss7::default]
+[2017-04-10T07:38:26+01:00] INFO: Starting Chef Run for node-chef
+[2017-04-10T07:38:26+01:00] INFO: Running start handlers
+[2017-04-10T07:38:26+01:00] INFO: Start handlers complete.
+[2017-04-10T07:38:26+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2017-04-10T07:38:26+01:00] INFO: Loading cookbooks [java@1.48.0, jboss7@0.1.0, apt@6.0.1, windows@3.0.4, homebrew@3.0.0, tar@2.0.0, ohai@5.0.3]
+[2017-04-10T07:38:27+01:00] WARN: Specifying command attribute on a script resource is a coding error, use the 'code' attribute, or the execute resource
+[2017-04-10T07:38:27+01:00] WARN: This attribute is deprecated and must be fixed or this code will fail on Chef 13
+[2017-04-10T07:38:27+01:00] INFO: Processing log[jdk-version-changed] action nothing (java::notify line 29)
+[2017-04-10T07:38:27+01:00] INFO: Processing yum_package[java-1.7.0-openjdk] action install (java::openjdk line 53)
+[2017-04-10T07:38:30+01:00] INFO: Processing yum_package[java-1.7.0-openjdk-devel] action install (java::openjdk line 53)
+[2017-04-10T07:38:30+01:00] INFO: Processing java_alternatives[set-java-alternatives] action set (java::openjdk line 59)
+[2017-04-10T07:38:33+01:00] INFO: Processing directory[/etc/profile.d] action create (java::set_java_home line 19)
+[2017-04-10T07:38:33+01:00] INFO: Processing template[/etc/profile.d/jdk.sh] action create (java::set_java_home line 23)
+[2017-04-10T07:38:33+01:00] INFO: Processing group[jboss] action create (jboss7::install line 7)
+[2017-04-10T07:38:33+01:00] INFO: Processing linux_user[jboss] action create (jboss7::install line 11)
+[2017-04-10T07:38:33+01:00] INFO: Processing remote_file[/tmp/jboss-as-7.1.1.Final.tar.gz] action create_if_missing (jboss7::install line 29)
+[2017-04-10T07:38:33+01:00] INFO: Processing tar_extract[/tmp/jboss-as-7.1.1.Final.tar.gz] action extract_local (jboss7::install line 36)
+[2017-04-10T07:38:33+01:00] INFO: Processing execute[extract /tmp/jboss-as-7.1.1.Final.tar.gz] action run (/root/.chef/cookbooks/tar/resources/extract.rb line 83)
+[2017-04-10T07:38:33+01:00] INFO: Processing template[/opt/jboss/standalone/configuration/standalone.xml] action create (jboss7::configure line 7)
+[2017-04-10T07:38:33+01:00] INFO: Processing template[/opt/jboss/bin/standalone.conf] action create (jboss7::configure line 15)
+[2017-04-10T07:38:33+01:00] INFO: Processing template[/etc/jboss-as.conf] action create (jboss7::configure line 28)
+[2017-04-10T07:38:33+01:00] INFO: Processing template[/etc/init.d/jboss7] action create (jboss7::configure line 37)
+[2017-04-10T07:38:33+01:00] INFO: Processing service[jboss7] action enable (jboss7::configure line 52)
+[2017-04-10T07:38:34+01:00] INFO: Processing service[jboss7] action start (jboss7::configure line 52)
+[2017-04-10T07:38:34+01:00] INFO: Processing yum_package[unzip] action install (jboss7::deploy line 7)
+[2017-04-10T07:38:34+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (jboss7::deploy line 11)
+[2017-04-10T07:38:34+01:00] INFO: Processing bash[deploy application] action run (jboss7::deploy line 18)
+[2017-04-10T07:38:34+01:00] WARN: bash[deploy application]: No code attribute was given, resource does nothing, this behavior is deprecated and will be removed in Chef-13
+[2017-04-10T07:38:34+01:00] INFO: bash[deploy application] ran successfully
+[2017-04-10T07:38:34+01:00] INFO: bash[deploy application] sending restart action to service[jboss7] (immediate)
+[2017-04-10T07:38:34+01:00] INFO: Processing service[jboss7] action restart (jboss7::configure line 52)
+[2017-04-10T07:38:39+01:00] INFO: service[jboss7] restarted
+[2017-04-10T07:38:39+01:00] INFO: Chef Run complete in 13.099479533 seconds
+[2017-04-10T07:38:39+01:00] INFO: Running report handlers
+[2017-04-10T07:38:39+01:00] INFO: Report handlers complete
