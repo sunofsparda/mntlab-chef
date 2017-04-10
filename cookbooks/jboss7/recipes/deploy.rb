@@ -16,10 +16,12 @@ remote_file node['jboss7']['test_app_archive'] do
 end
 
 bash 'deploy application' do
-  code <<-EOF
-     unzip #{node['jboss7']['test_app_archive']} -d #{node['jboss7']['jboss_deployments']}
-  EOF
+  # code <<-EOF
+  #    unzip #{node['jboss7']['test_app_archive']} -d #{node['jboss7']['jboss_deployments']}
+  # EOF
+  command "unzip #{node['jboss7']['test_app_archive']} -d #{node['jboss7']['jboss_deployments']}"
   user node['jboss7']['jboss_user']
-  not_if { ::File.directory? ("#{node['jboss7']['test_app_check']}")}
+  creates "#{node['jboss7']['test_app_check']}"
+  # not_if { ::File.directory? ("#{node['jboss7']['test_app_check']}")}
   notifies :restart, 'service[jboss7]', :immediately
 end 
