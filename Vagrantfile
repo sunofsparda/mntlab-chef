@@ -9,6 +9,6 @@ Vagrant.configure("2") do |config|
       chef_node.vm.provider :virtualbox do |vbox|
         vbox.customize ["modifyvm", :id, "--memory", "1024"]
       end  
-      chef_node.vm.provision "shell", path: "dev_provision.sh"
+      chef_node.vm.provision "shell", path: "chef-solo_provision.sh"
     end
 end
