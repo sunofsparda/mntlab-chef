@@ -1,0 +1,3 @@
+{
+"run_list": ["recipe[apache::default]","recipe[tomcat::default]","recipe[tomcat::enable_maintenance_mode]"]
+}
