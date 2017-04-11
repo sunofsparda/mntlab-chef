@@ -17,6 +17,13 @@ cp -r /vagrant/cookbooks /root/
 echo '=========== RUN_CHEF ==========='
 chef-solo -c /root/.chef/solo.rb > /vagrant/report/output.log
 chef-solo -c /root/.chef/solo.rb >> /vagrant/report/output.log
+
+echo '=========== ENABLE_MAINTENANCE_MODE ==========='
+chef-solo -c /root/.chef/solo_enable_maintenance_mode.rb >> /vagrant/report/output.log
+
+echo '=========== DISABLE_MAINTENANCE_MODE ==========='
+chef-solo -c /root/.chef/solo_disable_maintenance_mode.rb >> /vagrant/report/output.log
+
 echo 'end of provision'
 echo 'please, ensure that env is ok'
 echo 'this script does not provide any checks'
