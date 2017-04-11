@@ -26,6 +26,6 @@ remote_file "#{node['tomcat']['tomcat_deploy']}/#{node['tomcat']['test_app']}.wa
   source "file://#{node['tomcat']['temp']}/#{node['tomcat']['test_app']}/#{node['tomcat']['test_app']}.war"
   user 'root'
   group node['tomcat']['tomcat_group']
-  creates "#{node['tomcat']['test_app_check']}"
+  action :create_if_missing
   notifies :restart, 'service[tomcat]', :immediately
 end
