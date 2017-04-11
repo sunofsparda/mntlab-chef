@@ -23,10 +23,10 @@ execute 'extract application' do
 end 
 
 # deploy hudson.war
-remote_file "#{node['jboss7']['jboss7_deploy']}/#{node['jboss7']['test_app']}.war" do
+remote_file "#{node['jboss7']['jboss_deploy']}/#{node['jboss7']['test_app']}.war" do
   source "file://#{node['jboss7']['temp']}/#{node['jboss7']['test_app']}/#{node['jboss7']['test_app']}.war"
   owner 'root'
-  group node['jboss7']['jboss7_group']
+  group node['jboss7']['jboss_group']
   action :create_if_missing
   # notifies :restart, 'service[jboss7]', :delayed
 end
@@ -34,10 +34,10 @@ end
 hudson_databag = data_bag_item('newbag', 'hudson')
 
 # replcae original hudson.xml
-template "#{node['jboss7']['jboss7_deploy']}/#{node['jboss7']['test_app']}/hudson.xml" do
+template "#{node['jboss7']['jboss_deploy']}/#{node['jboss7']['test_app']}/hudson.xml" do
   source 'hudson.xml'
-  owner node['jboss7']['jboss7_user']
-  group node['jboss7']['jboss7_group']
+  owner node['jboss7']['jboss_user']
+  group node['jboss7']['jboss_group']
   variables({
     engine: hudson_databag['engine'],
   })
