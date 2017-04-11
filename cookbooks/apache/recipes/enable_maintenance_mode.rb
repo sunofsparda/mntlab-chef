@@ -7,7 +7,7 @@
 template '/var/www/html/maintenance_page.html' do
   source 'maintenance_page.erb'
   mode '0644'
-  action :create_if_missing
+  # action :create_if_missing
 end
 
 template '/etc/httpd/conf.d/vhost.conf' do

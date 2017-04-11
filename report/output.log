@@ -1,215 +1,210 @@
-[2017-04-11T12:53:04+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
+[2017-04-11T12:56:54+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
   One version per cookbook
 
-[2017-04-11T12:53:04+01:00] INFO: Forking chef instance to converge...
-[2017-04-11T12:53:04+01:00] INFO: *** Chef 12.18.31 ***
-[2017-04-11T12:53:04+01:00] INFO: Platform: x86_64-linux
-[2017-04-11T12:53:04+01:00] INFO: Chef-client pid: 21573
-[2017-04-11T12:53:06+01:00] INFO: Setting the run_list to ["recipe[apache::default]", "recipe[tomcat::default]"] from CLI options
-[2017-04-11T12:53:06+01:00] INFO: Run List is [recipe[apache::default], recipe[tomcat::default]]
-[2017-04-11T12:53:06+01:00] INFO: Run List expands to [apache::default, tomcat::default]
-[2017-04-11T12:53:06+01:00] INFO: Starting Chef Run for chefsolo
-[2017-04-11T12:53:06+01:00] INFO: Running start handlers
-[2017-04-11T12:53:06+01:00] INFO: Start handlers complete.
-[2017-04-11T12:53:06+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
-[2017-04-11T12:53:07+01:00] INFO: Loading cookbooks [apache@0.1.0, tomcat@0.1.0, java@1.48.0, apt@6.0.1, windows@3.0.4, homebrew@3.0.0, ohai@5.0.3]
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/recipes/default.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/recipes/configure.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/templates/default/maintenance_vhost.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/templates/default/prod_vhost.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/.kitchen.yml in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/Berksfile in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/chefignore in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/metadata.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/recipes/enable_maintenance_mode.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/recipes/disable_maintenance_mode.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/templates/default/maintenance_page.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/tomcat/recipes/deploy.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/recipes/install.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/tomcat/recipes/install.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/tomcat/README.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/README.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apache/.gitignore in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/tomcat/.gitignore in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/tomcat/.kitchen.yml in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/tomcat/Berksfile in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/tomcat/attributes/default.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/resources/alternatives.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/tomcat/recipes/default.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/default.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/homebrew.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/providers/alternatives.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/tomcat/metadata.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/ibm.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/ibm_tar.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/openjdk.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/tomcat/chefignore in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/providers/ark.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/oracle_i386.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/resources/ark.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/oracle_rpm.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/default_java_symlink.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/set_java_home.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/windows.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/notify.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/oracle.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/libraries/matchers.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/set_attributes_from_version.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/attributes/default.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/templates/default/jdk.sh.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/oracle_jce.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/templates/default/oracle.jinfo.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/recipes/purge_packages.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/Gemfile in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/README.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/libraries/helpers.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/libraries/provider_java_certificate.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/LICENSE in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/libraries/resource_java_certificate.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/chefignore in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/metadata.json in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/recipes/cacher-client.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/travis-build.sh in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/resources/preference.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/providers/preference.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/recipes/default.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/recipes/unattended-upgrades.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/libraries/helpers.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/libraries/matchers.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/ISSUES.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/files/default/15update-stamp in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/files/default/apt-proxy-v2.conf in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/recipes/cacher-ng.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/java/templates/default/ibm_jdk.installer.properties.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/templates/default/01proxy.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/templates/default/10dpkg-options.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/templates/default/20auto-upgrades.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/templates/default/acng.conf.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/templates/default/unattended-upgrades.seed.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/attributes/default.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/metadata.json in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/README.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/CHANGELOG.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/auto_run.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/CONTRIBUTING.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/certificate.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/certificate_binding.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/feature_dism.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/templates/default/10recommends.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/feature_servermanagercmd.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/templates/default/50unattended-upgrades.erb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/apt/MAINTAINERS.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/pagefile.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/font.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/path.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/printer_port.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/feature_powershell.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/recipes/default.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/shortcut.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/libraries/registry_helper.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/feature.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/libraries/version.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/share.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/http_acl.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/libraries/matchers.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/task.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/printer.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/libraries/windows_helper.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/libraries/version_helper.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/libraries/windows_privileged.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/files/dism_features.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/resources/zipfile.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/metadata.json in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/libraries/wmi_helper.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/MAINTAINERS.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/resources/cask.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/libraries/powershell_helper.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/CONTRIBUTING.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/providers/cask.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/CHANGELOG.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/providers/tap.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/recipes/default.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/recipes/install_formulas.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/README.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/resources/tap.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/libraries/homebrew_mixin.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/attributes/default.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/windows/.foodcritic in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/CONTRIBUTING.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/README.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/metadata.json in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/recipes/install_taps.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/recipes/cask.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/ohai/resources/hint.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/recipes/install_casks.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/ohai/resources/plugin.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/MAINTAINERS.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/ohai/recipes/default.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/ohai/CONTRIBUTING.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/ohai/.foodcritic in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/attributes/default.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/ohai/metadata.json in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/CHANGELOG.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/homebrew/libraries/matchers.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/ohai/README.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/ohai/MAINTAINERS.md in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/ohai/libraries/matchers.rb in the cache.
-[2017-04-11T12:53:07+01:00] INFO: Storing updated cookbooks/ohai/CHANGELOG.md in the cache.
-[2017-04-11T12:53:07+01:00] WARN: Cloning resource attributes for remote_file[/tmp/testweb.zip] from prior resource
+[2017-04-11T12:56:54+01:00] INFO: Forking chef instance to converge...
+[2017-04-11T12:56:55+01:00] INFO: *** Chef 12.18.31 ***
+[2017-04-11T12:56:55+01:00] INFO: Platform: x86_64-linux
+[2017-04-11T12:56:55+01:00] INFO: Chef-client pid: 23951
+[2017-04-11T12:56:58+01:00] INFO: Setting the run_list to ["recipe[apache::default]", "recipe[tomcat::default]"] from CLI options
+[2017-04-11T12:56:58+01:00] INFO: Run List is [recipe[apache::default], recipe[tomcat::default]]
+[2017-04-11T12:56:58+01:00] INFO: Run List expands to [apache::default, tomcat::default]
+[2017-04-11T12:56:58+01:00] INFO: Starting Chef Run for chefsolo
+[2017-04-11T12:56:58+01:00] INFO: Running start handlers
+[2017-04-11T12:56:58+01:00] INFO: Start handlers complete.
+[2017-04-11T12:56:58+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2017-04-11T12:56:58+01:00] INFO: Loading cookbooks [apache@0.1.0, tomcat@0.1.0, java@1.48.0, apt@6.0.1, windows@3.0.4, homebrew@3.0.0, ohai@5.0.3]
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/recipes/configure.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/recipes/default.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/recipes/enable_maintenance_mode.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/templates/default/maintenance_page.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/templates/default/prod_vhost.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/metadata.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/recipes/install.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/Berksfile in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/.gitignore in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/tomcat/recipes/default.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/tomcat/recipes/deploy.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/tomcat/recipes/install.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/recipes/disable_maintenance_mode.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/templates/default/maintenance_vhost.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/tomcat/README.md in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/tomcat/Berksfile in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/README.md in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/tomcat/.kitchen.yml in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/resources/alternatives.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/tomcat/attributes/default.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/providers/alternatives.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/providers/ark.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/default.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/default_java_symlink.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/chefignore in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/homebrew.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/tomcat/metadata.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/ibm.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/tomcat/chefignore in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/ibm_tar.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/openjdk.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/oracle_i386.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/oracle_jce.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apache/.kitchen.yml in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/oracle_rpm.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/tomcat/.gitignore in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/set_attributes_from_version.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/resources/ark.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/windows.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/libraries/matchers.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/oracle.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/notify.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/libraries/resource_java_certificate.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/templates/default/ibm_jdk.installer.properties.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/templates/default/jdk.sh.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/set_java_home.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/README.md in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/Gemfile in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/templates/default/oracle.jinfo.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/recipes/purge_packages.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/libraries/helpers.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/ISSUES.md in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/metadata.json in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/LICENSE in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/libraries/provider_java_certificate.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/chefignore in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/recipes/cacher-client.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/attributes/default.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/recipes/default.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/recipes/unattended-upgrades.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/attributes/default.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/resources/preference.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/providers/preference.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/templates/default/10recommends.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/java/travis-build.sh in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/libraries/helpers.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/templates/default/50unattended-upgrades.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/templates/default/acng.conf.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/libraries/matchers.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/recipes/cacher-ng.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/templates/default/unattended-upgrades.seed.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/templates/default/10dpkg-options.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/CONTRIBUTING.md in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/metadata.json in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/templates/default/01proxy.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/auto_run.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/files/default/apt-proxy-v2.conf in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/certificate.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/feature.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/feature_dism.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/feature_powershell.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/files/default/15update-stamp in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/README.md in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/feature_servermanagercmd.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/templates/default/20auto-upgrades.erb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/MAINTAINERS.md in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/font.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/http_acl.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/pagefile.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/printer.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/apt/CHANGELOG.md in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/printer_port.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/share.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/task.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/recipes/default.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/libraries/matchers.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/shortcut.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/path.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/resources/certificate_binding.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/libraries/version_helper.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/libraries/windows_helper.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/libraries/windows_privileged.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/libraries/wmi_helper.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/libraries/powershell_helper.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/windows/attributes/default.rb in the cache.
+[2017-04-11T12:56:58+01:00] INFO: Storing updated cookbooks/windows/libraries/registry_helper.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/windows/libraries/version.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/windows/resources/zipfile.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/windows/CONTRIBUTING.md in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/windows/README.md in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/windows/metadata.json in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/windows/files/dism_features.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/windows/MAINTAINERS.md in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/windows/CHANGELOG.md in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/providers/cask.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/resources/cask.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/recipes/install_casks.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/resources/tap.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/recipes/cask.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/libraries/homebrew_mixin.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/windows/.foodcritic in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/libraries/matchers.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/CONTRIBUTING.md in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/providers/tap.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/recipes/install_taps.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/recipes/default.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/README.md in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/MAINTAINERS.md in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/ohai/resources/hint.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/ohai/recipes/default.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/ohai/CONTRIBUTING.md in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/recipes/install_formulas.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/attributes/default.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/ohai/.foodcritic in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/CHANGELOG.md in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/homebrew/metadata.json in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/ohai/MAINTAINERS.md in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/ohai/libraries/matchers.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/ohai/README.md in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/ohai/resources/plugin.rb in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/ohai/metadata.json in the cache.
+[2017-04-11T12:56:59+01:00] INFO: Storing updated cookbooks/ohai/CHANGELOG.md in the cache.
+[2017-04-11T12:56:59+01:00] WARN: Cloning resource attributes for remote_file[/tmp/testweb.zip] from prior resource
 Previous remote_file[/tmp/testweb.zip]: /root/.chef/cookbooks/apache/recipes/configure.rb:13:in `from_file'
 Current  remote_file[/tmp/testweb.zip]: /root/.chef/cookbooks/tomcat/recipes/deploy.rb:11:in `from_file' (CHEF-3694)/root/.chef/cookbooks/tomcat/recipes/deploy.rb:11:in `from_file'.
 Please see https://docs.chef.io/deprecations_resource_cloning.html for further details and information on how to correct this problem. at /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/event_dispatch/dispatcher.rb:43:in `call'
-[2017-04-11T12:53:07+01:00] INFO: Processing yum_package[httpd] action install (apache::install line 7)
-[2017-04-11T12:53:10+01:00] INFO: Processing service[httpd] action enable (apache::install line 11)
-[2017-04-11T12:53:10+01:00] INFO: Processing service[httpd] action start (apache::install line 11)
-[2017-04-11T12:53:11+01:00] INFO: Processing template[/etc/httpd/conf.d/vhost.conf] action create (apache::configure line 7)
-[2017-04-11T12:53:11+01:00] INFO: template[/etc/httpd/conf.d/vhost.conf] backed up to /root/.chef/local-mode-cache/backup/etc/httpd/conf.d/vhost.conf.chef-20170411125311.085023
-[2017-04-11T12:53:11+01:00] INFO: template[/etc/httpd/conf.d/vhost.conf] updated file contents /etc/httpd/conf.d/vhost.conf
-[2017-04-11T12:53:11+01:00] INFO: template[/etc/httpd/conf.d/vhost.conf] sending restart action to service[httpd] (immediate)
-[2017-04-11T12:53:11+01:00] INFO: Processing service[httpd] action restart (apache::install line 11)
-[2017-04-11T12:53:11+01:00] INFO: service[httpd] restarted
-[2017-04-11T12:53:11+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (apache::configure line 13)
-[2017-04-11T12:53:11+01:00] INFO: Processing yum_package[tomcat] action install (tomcat::install line 7)
-[2017-04-11T12:53:11+01:00] INFO: Processing service[tomcat] action enable (tomcat::install line 11)
-[2017-04-11T12:53:11+01:00] INFO: Processing service[tomcat] action start (tomcat::install line 11)
-[2017-04-11T12:53:11+01:00] INFO: Processing yum_package[unzip] action install (tomcat::deploy line 7)
-[2017-04-11T12:53:11+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (tomcat::deploy line 11)
-[2017-04-11T12:53:11+01:00] INFO: Processing execute[extract application] action run (tomcat::deploy line 18)
-[2017-04-11T12:53:11+01:00] INFO: Processing remote_file[/var/lib/tomcat/webapps/testweb.war] action create_if_missing (tomcat::deploy line 25)
-[2017-04-11T12:53:11+01:00] INFO: Chef Run complete in 4.706171975 seconds
-[2017-04-11T12:53:11+01:00] INFO: Running report handlers
-[2017-04-11T12:53:11+01:00] INFO: Report handlers complete
-[2017-04-11T12:53:13+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
+[2017-04-11T12:56:59+01:00] INFO: Processing yum_package[httpd] action install (apache::install line 7)
+[2017-04-11T12:57:03+01:00] INFO: Processing service[httpd] action enable (apache::install line 11)
+[2017-04-11T12:57:03+01:00] INFO: Processing service[httpd] action start (apache::install line 11)
+[2017-04-11T12:57:03+01:00] INFO: Processing template[/etc/httpd/conf.d/vhost.conf] action create (apache::configure line 7)
+[2017-04-11T12:57:03+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (apache::configure line 13)
+[2017-04-11T12:57:03+01:00] INFO: Processing yum_package[tomcat] action install (tomcat::install line 7)
+[2017-04-11T12:57:03+01:00] INFO: Processing service[tomcat] action enable (tomcat::install line 11)
+[2017-04-11T12:57:04+01:00] INFO: Processing service[tomcat] action start (tomcat::install line 11)
+[2017-04-11T12:57:04+01:00] INFO: Processing yum_package[unzip] action install (tomcat::deploy line 7)
+[2017-04-11T12:57:04+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (tomcat::deploy line 11)
+[2017-04-11T12:57:04+01:00] INFO: Processing execute[extract application] action run (tomcat::deploy line 18)
+[2017-04-11T12:57:04+01:00] INFO: Processing remote_file[/var/lib/tomcat/webapps/testweb.war] action create_if_missing (tomcat::deploy line 25)
+[2017-04-11T12:57:04+01:00] INFO: Chef Run complete in 5.790586467 seconds
+[2017-04-11T12:57:04+01:00] INFO: Running report handlers
+[2017-04-11T12:57:04+01:00] INFO: Report handlers complete
+[2017-04-11T12:57:05+01:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /root
   One version per cookbook
 
-[2017-04-11T12:53:13+01:00] INFO: Forking chef instance to converge...
-[2017-04-11T12:53:13+01:00] INFO: *** Chef 12.18.31 ***
-[2017-04-11T12:53:13+01:00] INFO: Platform: x86_64-linux
-[2017-04-11T12:53:13+01:00] INFO: Chef-client pid: 22016
-[2017-04-11T12:53:16+01:00] INFO: Setting the run_list to ["recipe[apache::default]", "recipe[tomcat::default]"] from CLI options
-[2017-04-11T12:53:16+01:00] INFO: Run List is [recipe[apache::default], recipe[tomcat::default]]
-[2017-04-11T12:53:16+01:00] INFO: Run List expands to [apache::default, tomcat::default]
-[2017-04-11T12:53:16+01:00] INFO: Starting Chef Run for chefsolo
-[2017-04-11T12:53:16+01:00] INFO: Running start handlers
-[2017-04-11T12:53:16+01:00] INFO: Start handlers complete.
-[2017-04-11T12:53:16+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
-[2017-04-11T12:53:16+01:00] INFO: Loading cookbooks [apache@0.1.0, tomcat@0.1.0, java@1.48.0, apt@6.0.1, windows@3.0.4, homebrew@3.0.0, ohai@5.0.3]
-[2017-04-11T12:53:16+01:00] WARN: Cloning resource attributes for remote_file[/tmp/testweb.zip] from prior resource
+[2017-04-11T12:57:05+01:00] INFO: Forking chef instance to converge...
+[2017-04-11T12:57:05+01:00] INFO: *** Chef 12.18.31 ***
+[2017-04-11T12:57:05+01:00] INFO: Platform: x86_64-linux
+[2017-04-11T12:57:05+01:00] INFO: Chef-client pid: 24335
+[2017-04-11T12:57:09+01:00] INFO: Setting the run_list to ["recipe[apache::default]", "recipe[tomcat::default]"] from CLI options
+[2017-04-11T12:57:09+01:00] INFO: Run List is [recipe[apache::default], recipe[tomcat::default]]
+[2017-04-11T12:57:09+01:00] INFO: Run List expands to [apache::default, tomcat::default]
+[2017-04-11T12:57:09+01:00] INFO: Starting Chef Run for chefsolo
+[2017-04-11T12:57:09+01:00] INFO: Running start handlers
+[2017-04-11T12:57:09+01:00] INFO: Start handlers complete.
+[2017-04-11T12:57:09+01:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+[2017-04-11T12:57:09+01:00] INFO: Loading cookbooks [apache@0.1.0, tomcat@0.1.0, java@1.48.0, apt@6.0.1, windows@3.0.4, homebrew@3.0.0, ohai@5.0.3]
+[2017-04-11T12:57:09+01:00] WARN: Cloning resource attributes for remote_file[/tmp/testweb.zip] from prior resource
 Previous remote_file[/tmp/testweb.zip]: /root/.chef/cookbooks/apache/recipes/configure.rb:13:in `from_file'
 Current  remote_file[/tmp/testweb.zip]: /root/.chef/cookbooks/tomcat/recipes/deploy.rb:11:in `from_file' (CHEF-3694)/root/.chef/cookbooks/tomcat/recipes/deploy.rb:11:in `from_file'.
 Please see https://docs.chef.io/deprecations_resource_cloning.html for further details and information on how to correct this problem. at /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/chef-12.18.31/lib/chef/event_dispatch/dispatcher.rb:43:in `call'
-[2017-04-11T12:53:16+01:00] INFO: Processing yum_package[httpd] action install (apache::install line 7)
-[2017-04-11T12:53:19+01:00] INFO: Processing service[httpd] action enable (apache::install line 11)
-[2017-04-11T12:53:19+01:00] INFO: Processing service[httpd] action start (apache::install line 11)
-[2017-04-11T12:53:19+01:00] INFO: Processing template[/etc/httpd/conf.d/vhost.conf] action create (apache::configure line 7)
-[2017-04-11T12:53:19+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (apache::configure line 13)
-[2017-04-11T12:53:19+01:00] INFO: Processing yum_package[tomcat] action install (tomcat::install line 7)
-[2017-04-11T12:53:19+01:00] INFO: Processing service[tomcat] action enable (tomcat::install line 11)
-[2017-04-11T12:53:19+01:00] INFO: Processing service[tomcat] action start (tomcat::install line 11)
-[2017-04-11T12:53:20+01:00] INFO: Processing yum_package[unzip] action install (tomcat::deploy line 7)
-[2017-04-11T12:53:20+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (tomcat::deploy line 11)
-[2017-04-11T12:53:20+01:00] INFO: Processing execute[extract application] action run (tomcat::deploy line 18)
-[2017-04-11T12:53:20+01:00] INFO: Processing remote_file[/var/lib/tomcat/webapps/testweb.war] action create_if_missing (tomcat::deploy line 25)
-[2017-04-11T12:53:20+01:00] INFO: Chef Run complete in 3.988925013 seconds
-[2017-04-11T12:53:20+01:00] INFO: Running report handlers
-[2017-04-11T12:53:20+01:00] INFO: Report handlers complete
+[2017-04-11T12:57:09+01:00] INFO: Processing yum_package[httpd] action install (apache::install line 7)
+[2017-04-11T12:57:14+01:00] INFO: Processing service[httpd] action enable (apache::install line 11)
+[2017-04-11T12:57:14+01:00] INFO: Processing service[httpd] action start (apache::install line 11)
+[2017-04-11T12:57:14+01:00] INFO: Processing template[/etc/httpd/conf.d/vhost.conf] action create (apache::configure line 7)
+[2017-04-11T12:57:14+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (apache::configure line 13)
+[2017-04-11T12:57:14+01:00] INFO: Processing yum_package[tomcat] action install (tomcat::install line 7)
+[2017-04-11T12:57:14+01:00] INFO: Processing service[tomcat] action enable (tomcat::install line 11)
+[2017-04-11T12:57:14+01:00] INFO: Processing service[tomcat] action start (tomcat::install line 11)
+[2017-04-11T12:57:14+01:00] INFO: Processing yum_package[unzip] action install (tomcat::deploy line 7)
+[2017-04-11T12:57:14+01:00] INFO: Processing remote_file[/tmp/testweb.zip] action create_if_missing (tomcat::deploy line 11)
+[2017-04-11T12:57:14+01:00] INFO: Processing execute[extract application] action run (tomcat::deploy line 18)
+[2017-04-11T12:57:14+01:00] INFO: Processing remote_file[/var/lib/tomcat/webapps/testweb.war] action create_if_missing (tomcat::deploy line 25)
+[2017-04-11T12:57:14+01:00] INFO: Chef Run complete in 5.278642244 seconds
+[2017-04-11T12:57:14+01:00] INFO: Running report handlers
+[2017-04-11T12:57:14+01:00] INFO: Report handlers complete

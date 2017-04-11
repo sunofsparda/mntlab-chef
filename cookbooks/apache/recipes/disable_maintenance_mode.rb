@@ -7,5 +7,5 @@
 template '/etc/httpd/conf.d/vhost.conf' do
   source 'prod_vhost.erb'
   mode '0644'
-  # notifies :restart, 'service[httpd]', :immediately
+  notifies :restart, 'service[httpd]', :immediately
 end
