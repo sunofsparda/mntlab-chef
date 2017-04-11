@@ -19,4 +19,7 @@ knife data bag from file newbag hudson_databag.json
 knife role from file jboss_role.json
 
 # knife role delete $role_name # to delete role
+
+# bootstrap
 knife bootstrap 192.168.100.102 -N chef-node1 -x root -P vagrant -r 'role[jboss]' -E "Chef-dev"
+knife bootstrap chef-node1 --node-name chef-node1 --run-list jboss
