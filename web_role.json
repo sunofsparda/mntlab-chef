@@ -1,6 +1,6 @@
 {
-  "name": "jboss",
-  "description": "install and configure Jboss",
+  "name": "web",
+  "description": "install and configure web server",
   "json_class": "Chef::Role",
   "default_attributes": {
 
