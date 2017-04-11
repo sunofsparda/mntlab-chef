@@ -36,8 +36,8 @@ hudson_databag = data_bag_item('newbag', 'hudson')
 # replcae original hudson.xml
 template "#{node['jboss7']['jboss7_deploy']}/#{node['jboss7']['test_app']}/hudson.xml" do
   source 'hudson.xml'
-  owner "#{node['jboss7']['user']}"
-  group "#{node['jboss7']['group']}"
+  owner node['jboss7']['jboss7_user']
+  group node['jboss7']['jboss7_group']
   variables({
     engine: hudson_databag['engine'],
   })
