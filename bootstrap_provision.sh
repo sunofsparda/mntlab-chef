@@ -10,6 +10,7 @@ knife bootstrap 192.168.100.102 -N node-chef1 -x root -P 'vagrant'
 knife client list
 
 #knife environment create Chef-dev -e vim
-knife environment from file chef-dev.json
+knife environment from file chef-dev_env.json
 
 knife data bag create newbag
+knife data bag from file newbag hudson_databag.json

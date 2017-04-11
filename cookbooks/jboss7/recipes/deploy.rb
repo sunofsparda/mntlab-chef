@@ -15,13 +15,17 @@ remote_file node['jboss7']['test_app_archive'] do
   action :create_if_missing
 end
 
-bash 'deploy application' do
-  # code <<-EOF
-  #    unzip #{node['jboss7']['test_app_archive']} -d #{node['jboss7']['jboss_deployments']}
-  # EOF
-  command "unzip #{node['jboss7']['test_app_archive']} -d #{node['jboss7']['jboss_deployments']}"
-  user node['jboss7']['jboss_user']
-  creates "#{node['jboss7']['test_app_check']}"
-  # not_if { ::File.directory? ("#{node['jboss7']['test_app_check']}")}
-  notifies :restart, 'service[jboss7]', :immediately
+execute 'extract application' do
+  command "unzip #{node['jboss7']['test_app_archive']} -d #{node['jboss7']['temp']}"
+  user 'root'
+  group node['jboss7']['jboss7_group']
+  creates "#{node['jboss7']['temp']}/#{node['jboss7']['test_app']}/#{node['jboss7']['test_app']}.war"
 end 
+
+remote_file "#{node['jboss7']['jboss7_deploy']}/#{node['jboss7']['test_app']}.war" do
+  source "file://#{node['jboss7']['temp']}/#{node['jboss7']['test_app']}/#{node['jboss7']['test_app']}.war"
+  owner 'root'
+  group node['jboss7']['jboss7_group']
+  action :create_if_missing
+  # notifies :restart, 'service[jboss7]', :immediately
+end
