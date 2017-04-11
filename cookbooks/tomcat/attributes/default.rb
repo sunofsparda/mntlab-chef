@@ -1,0 +1,9 @@
+default['tomcat']['temp'] = "/tmp"
+default['tomcat']['tomcat_deploy'] = '/var/lib/tomcat/webapps'
+default['tomcat']['tomcat_user'] = 'tomcat'
+default['tomcat']['tomcat_group'] = 'tomcat'
+default['tomcat']['test_app'] = 'testweb'
+default['tomcat']['test_app_archive_type'] = '.zip'
+default['tomcat']['test_app_url'] = "http://www.cumulogic.com/download/Apps/#{node['tomcat']['test_app']}#{node['tomcat']['test_app_archive_type']}"
+default['tomcat']['test_app_archive'] = "#{node['tomcat']['temp']}/#{node['tomcat']['test_app']}#{node['tomcat']['test_app_archive_type']}"
+default['tomcat']['test_app_check'] = "#{node['tomcat']['tomcat_deploy']}/#{node['tomcat']['test_app']}"
