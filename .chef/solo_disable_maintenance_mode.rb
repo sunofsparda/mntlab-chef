@@ -1,4 +1,4 @@
 log_level :auto
 file_cache_path "/root/.chef/"
 cookbook_path "/root/cookbooks"
-json_attribs "/root/.chef/runlist_enable.json"
+json_attribs "/root/.chef/runlist_disable_maintenance_mode.json"
