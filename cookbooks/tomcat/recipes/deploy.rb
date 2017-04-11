@@ -20,7 +20,6 @@ execute 'deploy application' do
   user node['tomcat']['tomcat_user']
   group node['tomcat']['tomcat_group']
   creates "#{node['tomcat']['temp']}/#{node['tomcat']['test_app']}/#{node['tomcat']['test_app']}.war"
-  action :create_if_missing
 end 
 
 remote_file "#{node['tomcat']['tomcat_deploy']}/#{node['tomcat']['test_app']}.war" do
