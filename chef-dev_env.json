@@ -1,0 +1,16 @@
+{
+  "name": "Chef-dev",
+  "description": "devops2017",
+  "cookbook_versions": {
+  },
+  "json_class": "Chef::Environment",
+  "chef_type": "environment",
+  "default_attributes": {
+  },
+  "override_attributes": {
+    "jboss7": {
+      "test_app": "hudson",
+      "test_app_url": "http://www.cumulogic.com/download/Apps/hudson.zip"
+    }
+  }
+} 

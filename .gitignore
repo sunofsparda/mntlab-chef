@@ -9,3 +9,6 @@ bin/*
 
 .kitchen/
 .kitchen.local.yml
+
+**/syntaxcache/
+
