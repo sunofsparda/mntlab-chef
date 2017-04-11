@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#
+# RUN ON YOUR CHEF-SERVER
+#
+
 chef-server-ctl reconfigure
 
 chef-server-ctl user-create acherlyonok Chef Node1 acherlyonok@chef-server.com 'qwe123' --filename /vagrant/.chef/acherlyonok.pem
