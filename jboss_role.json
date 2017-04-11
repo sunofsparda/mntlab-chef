@@ -15,7 +15,7 @@
   "env_run_lists": {
     "chef-dev": [
       "recipe[java::default]",
-      "recipe[jboss::default]"
+      "recipe[jboss7::default]"
     ]
   }
 }
