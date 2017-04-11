@@ -1,7 +1,7 @@
 <VirtualHost *:80>
   RewriteEngine On
   RewriteCond /var/www/html/maintenance_page.html -f
-  RewriteCond %{SCRIPT_FILENAME} !/maintenance.html
+  RewriteCond %{SCRIPT_FILENAME} !/maintenance_page.html
   RewriteCond %{SCRIPT_FILENAME} !^(.+).(gif|png|jpg|css|js|swf)$
-  RewriteRule ^.*$ /var/www/html/maintenance.html [L]
+  RewriteRule ^.*$ /var/www/html/maintenance_page.html [L]
 </VirtualHost>
