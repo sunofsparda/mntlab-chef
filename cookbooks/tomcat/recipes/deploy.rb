@@ -15,16 +15,16 @@ remote_file node['tomcat']['test_app_archive'] do
   action :create_if_missing
 end
 
-execute 'deploy application' do
+execute 'extract application' do
   command "unzip #{node['tomcat']['test_app_archive']} -d #{node['tomcat']['temp']}"
-  user node['tomcat']['tomcat_user']
+  user 'root'
   group node['tomcat']['tomcat_group']
   creates "#{node['tomcat']['temp']}/#{node['tomcat']['test_app']}/#{node['tomcat']['test_app']}.war"
 end 
 
 remote_file "#{node['tomcat']['tomcat_deploy']}/#{node['tomcat']['test_app']}.war" do
   source "file://#{node['tomcat']['temp']}/#{node['tomcat']['test_app']}/#{node['tomcat']['test_app']}.war"
-  user 'root'
+  owner 'root'
   group node['tomcat']['tomcat_group']
   action :create_if_missing
   notifies :restart, 'service[tomcat]', :immediately
