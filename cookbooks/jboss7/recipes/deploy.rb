@@ -34,7 +34,7 @@ end
 hudson_databag = data_bag_item('newbag', 'hudson')
 
 # replcae original hudson.xml
-template "#{node['jboss7']['jboss_deploy']}/#{node['jboss7']['test_app']}/hudson.xml" do
+template "#{node['jboss7']['jboss_deploy']}/hudson.xml" do
   source 'hudson.xml'
   owner node['jboss7']['jboss_user']
   group node['jboss7']['jboss_group']
